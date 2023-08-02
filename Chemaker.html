@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="robots" content="noindex">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Chemaker</title>
+  <script src="https://kit.fontawesome.com/a1a8853140.js" crossorigin="anonymous"></script>
+<style>
+body{
+ position: relative;
+ display: flex;
+ flex: 1;
+}
+label{
+text-align: center;
+}
+.des-div{
+position: relative;
+  width: 30%;
+}
+.des-div > div{
+  width: 10%;
+  text-align: center;
+}
+.mkr-div{
+ positive: relative;
+}
+
+</style>
+</head>
+<body>
+ <div class="mkr-div" id="chem-des">
+   <div class="des-div">
+     <div>
+	  <label for="melt-inpt">
+	     Melting Point
+	  </label>
+	  <br>
+	  <input type="number" name="melt-inpt" max="" min=""/>
+	 </div>
+	      <div>
+	  <label for="boil-inpt">
+	     Boiling Point
+	  </label>
+	  <br>
+	  <input type="number" name="boil-inpt" max="" min=""/>
+	 </div>
+	      <div>
+	  <label for="dens-inpt">
+	      Density
+	  </label>
+	  <br>
+	  <input type="number" name="dens-inpt" max="" min=""/>
+	 </div>
+	      <div>
+	  <label for="visc-inpt">
+	      viscosity
+	  </label>
+	  <br>
+	  <input type="number" name="visc-inpt" max="" min=""/>
+	 </div>
+	      <div>
+	  <label for="solub-inpt">
+	     Solubility
+	  </label>
+	  <br>
+	  <input type="number" name="solub-inpt" max="" min=""/>
+	 </div>
+	      <div>
+	  <label for="crys-inpt">
+		Crystal Shape 
+	  </label>
+	  <br>
+	  <input type="number" name="crys-inpt" max="" min=""/>
+	 </div>
+	     <div>
+	  <label for="color-inpt">
+	     color
+	  </label>
+	  <br>
+	  <input type="number" name="color-inpt" max="" min=""/>
+	 </div>
+	      <div>
+	  <label for="vol-inpt">
+		Volume
+	  </label>
+	  <br>
+	  <input type="number" name="vol-inpt" max="" min=""/>
+	 </div>
+	      <div>
+	<label for="conduct-inpt">
+	conductivity
+	  </label>
+	  <br>
+	  <input type="number" name="conduct-inpt" max="" min=""/>
+	 </div>
+	     <div>
+	  <label for="mallea-inpt">
+		Malleability
+	  </label>
+	  <br>
+	  <input type="number" name="mallea-inpt" max="" min=""/>
+	 </div>
+	      <div>
+	  <label for="flam-inpt">
+	Flammability
+	  </label>
+	  <br>
+	  <input type="number" name="flam-inpt" max="" min="0"/>
+	 </div>
+	 <div>
+	  <label for="toxic-inpt">
+Toxicty	  
+</label>
+	  <br>
+	 <input type="number" name="toxic-inpt" max="" min="0"/>
+	 </div>
+	 <div>
+	  <label for="acid-inpt">
+Acidity  
+</label>
+	  <br>
+	  <input type="number" name="acid-inpt" max="" min="0"/>
+	 </div> 
+	  <div>
+	  <label for="hygro-inpt">
+Hygroscopity 
+</label>
+	  <br>
+	  <input type="number" name="hygro-inpt" max="" min="0"/>
+	 </div>
+	  <div>
+	  <label for="strength-inpt">
+Strength
+</label>
+	  <br>
+	  <input type="number" name="strength-inpt" max="" min="0"/>
+	 </div>
+	  <div>
+	  <label for="elast-inpt">
+	Elasticity
+</label>
+	  <br>
+	  <input type="number" name="elast-inpt" max="" min="0"/>
+	 </div>
+	  <div>
+	  <label for="britt-inpt">
+Brittleness
+</label>
+	  <br>
+	  <input type="number" name="britt-inpt" max="" min="0"/>
+	 </div>
+   </div>
+   <button>+</button>
+ </div>
+ <div class="mkr-div" id="new-mol-list">
+   <div class="new-mol">
+     <table>
+	   <tr>
+	     <td>MP</td>
+		 <td>BP</td>
+		 <td>density</td>
+		 <td>viscosity</td>
+		 <td>solubility</td>
+		 <td>crystal shape</td>
+		 <td>color</td>
+		 <td>Volume</td>
+		 <td>Conductivity</td>
+		 <td>Malleability</td>
+		 <td>Flammability</td>
+		 <td>Toxicity</td>
+		 <td>Acidity</td>
+		 <td>Hygroscopity</td>
+		 <td>Strength</td>
+		 <td>Elasticity</td>
+		 <td>Brittleness</td>
+	   </tr>
+	   <tr>
+	     <td>MP</td>
+		 <td>BP</td>
+		 <td>density</td>
+		 <td>viscosity</td>
+		 <td>solubility</td>
+		 <td>crystal shape</td>
+		 <td>color</td>
+		 <td>Volume</td>
+		 <td>Conductivity</td>
+		 <td>Malleability</td>
+		 <td>Flammability</td>
+		 <td>Toxicity</td>
+		 <td>Acidity</td>
+		 <td>Hygroscopity</td>
+		 <td>Strength</td>
+		 <td>Elasticity</td>
+		 <td>Brittleness</td>
+	   </tr>
+	 </table>
+   </div>
+ </div>
+</body>
+<script src="./Chemaker.js" type="text/javascript" defer async></script>
+</html>
