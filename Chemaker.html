@@ -12,153 +12,300 @@ body{
  position: relative;
  display: flex;
  flex: 1;
+ width: 100%;
+ margin: auto;
+ height: 600px; 
+ background-image: url('./bubbles.gif');
+ baxkground-repeat: no-repeat;
+ background-size: 100%;
 }
+  p{  
+	width: 100%;
+	word-break: break-all;
+	color: white;
+	overflow-wrap: break-word;
+    white-space: normal;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 240px;
+	background: linear-gradient(darkblue,blue);
+	
+  }
+  div{
+   border: solid 1px white;
+  }
 label{
 text-align: center;
+background-color: darkblue;
+width: 100%;
+color: white;
 }
 .des-div{
 position: relative;
-  width: 30%;
+width: 100%;
 }
 .des-div > div{
-  width: 10%;
+  width: 100%;
   text-align: center;
+  background-color: blue;
+  height: 47px;
+}
+.des-div > div > h3{
+  background-color: darkblue;
+  color: white;
+}
+.des-div > div > input[type=number]{
+  width: 60%;
+  position: relative;
+  margin-top: 2px;
 }
 .mkr-div{
  positive: relative;
+ height: 300px;
+ 
+}
+#chem-des{
+ width: 100%;
+}
+#chem-des>button{
+  width: 100%;
+  
+}
+h3{
+position: relative;
+margin: 0px;
+border: solid 1px white;
+background-color: darkblue;
+}
+#new-mol-list{
+  height: 700px;
+  width: 100%;
+   background-color: blue;
+    overflow-y: auto;
+ overflow-x: hidden;
+ color: white;
+}
+table{
+ text-align: center;
+ width: 100%;
+ border: solid 1px black;
+ border-collapse: collapse;
+ margin: auto;
+ background-color: gray;
+ color: white;
+}
+
+
+tr:nth-child(even){
+  background-color: darkblue;
+}
+tr:nth-child(odd){
+   background-color: blue;
+}
+#mol-img-div>img{
+   height: inherit;
+   width: 100%;
+   height: 350px;
+}
+.desc{
+ display: flex;
+ flex: 1;
+ height: 300px;
+ border: solid 1px black;
+ position: relative;
+ margin-bottom: 30px;
+ background-color: white;
+}
+#mol-desc{
+  border: solid 1px black;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  height: 300px;
+  display: inline-block;
+  margin-top: 0px;
+}
+.mol-mkr-div{
+ position: relative;
+ margin: 0px;
+ height: 400px;
+ width: 100%;
+}
+#mol-build{
+  width: 30%;
+}
+.desc>.mol-div{
+ width: 48%;
+ height: inherit;
+ display: inline;
+ text-align: center;
+}
+
+.mol-srch{
+position: relative;
+margin-top: 0px;
+ width: 100%;
+}
+.mol-srch>button{
+ background: linear-gradient(darkblue,blue);
+ color: white;
+ border: solid 1px white;
+}
+.mol-srch > *{ 
+ width: 48%;
+ display: inline;
+}
+h2{
+ background-color: darkblue;
+ margin: 0px;
+ border: solid 1px white;
+ color: white;
+ 
+}
+h1{
+position: relative;
+  margin: 0px;
+  border: white solid 1px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(lightblue,blue, darkblue);
+  
+}
+h1, h2, h3{
+ color: white;
+ text-align: center;
+ text-decoration: underline;
+}
+#new-mol-table{
+ overflow-y: auto;
+ overflow-x: hidden;
+ height: 340px;
+ width: 100%;
+}
+#mol-list{
+ width: 40%;
+ border: solid 1px white;
+ float: right;
+ display: inline-block;
+ height: 640px;
+}
+.new-mol{
+ background: linear-gradient(darkblue,blue);
+ height: 250px;
+   width: 100%;
+   height: 300px;
+ overflow-y: hidden;
+ overflow-x: auto;
+}
+#mol-table{
+ height: 340px;
+ overflow-y: auto;
+ overflow-x: auto;
+}
+img{
+ width: 150px;
+ height: 150px;
+}
+#mol-info>div{
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+}
+ul{
+text-align: center;
+list-style-type: none;
+background: linear-gradient(lightblue, blue);
 }
 
 </style>
 </head>
 <body>
- <div class="mkr-div" id="chem-des">
+<div id="mol-build" class="mol-mkr-div">
+<div class="mkr-div" id="chem-des">  
    <div class="des-div">
+	<div>
+	<h3>Freezing Point</h3>
+	  <input type="number" name="freez-inpt"/>
+	 </div>
      <div>
-	  <label for="melt-inpt">
-	     Melting Point
-	  </label>
-	  <br>
-	  <input type="number" name="melt-inpt" max="" min=""/>
+	 <h3>Melting Point</h3>
+	  <input type="number" name="melt-inpt"/>
 	 </div>
 	      <div>
-	  <label for="boil-inpt">
-	     Boiling Point
-	  </label>
-	  <br>
-	  <input type="number" name="boil-inpt" max="" min=""/>
+	  <h3>Boiling Point</h3>
+	  <input type="number" name="boil-inpt"/>
 	 </div>
 	      <div>
-	  <label for="dens-inpt">
-	      Density
-	  </label>
-	  <br>
-	  <input type="number" name="dens-inpt" max="" min=""/>
+		  <h3>Density</h3>
+	  <input type="number" name="dens-inpt"/>
+	 </div>
+	      <div>	
+		  <h3>Viscosity</h3>
+	  <input type="number" name="visc-inpt"/>
+	 </div>
+	      <div>	
+<h3>Solubility</h3>		  
+	  <input type="number" name="solub-inpt"/>
 	 </div>
 	      <div>
-	  <label for="visc-inpt">
-	      viscosity
-	  </label>
-	  <br>
-	  <input type="number" name="visc-inpt" max="" min=""/>
-	 </div>
-	      <div>
-	  <label for="solub-inpt">
-	     Solubility
-	  </label>
-	  <br>
-	  <input type="number" name="solub-inpt" max="" min=""/>
-	 </div>
-	      <div>
-	  <label for="crys-inpt">
-		Crystal Shape 
-	  </label>
-	  <br>
-	  <input type="number" name="crys-inpt" max="" min=""/>
+		  <h3>Crystal</h3>
+	  <input type="number" name="crys-inpt">
 	 </div>
 	     <div>
-	  <label for="color-inpt">
-	     color
-	  </label>
-	  <br>
-	  <input type="number" name="color-inpt" max="" min=""/>
+	<h3>color</h3>
+	  <input type="number" name="color-inpt"/>
 	 </div>
+	   
 	      <div>
-	  <label for="vol-inpt">
-		Volume
-	  </label>
-	  <br>
-	  <input type="number" name="vol-inpt" max="" min=""/>
-	 </div>
-	      <div>
-	<label for="conduct-inpt">
-	conductivity
-	  </label>
-	  <br>
-	  <input type="number" name="conduct-inpt" max="" min=""/>
+		  <h3>conductivity</h3>
+	  <input type="number" name="conduct-inpt"/>
 	 </div>
 	     <div>
-	  <label for="mallea-inpt">
-		Malleability
-	  </label>
-	  <br>
-	  <input type="number" name="mallea-inpt" max="" min=""/>
+	<h3>Malleability</h3>
+	  <input type="number" name="mallea-inpt"/>
 	 </div>
 	      <div>
-	  <label for="flam-inpt">
-	Flammability
-	  </label>
-	  <br>
-	  <input type="number" name="flam-inpt" max="" min="0"/>
+		  <h3>Flammability</h3>
+	  <input type="number" name="flam-inpt" />
 	 </div>
 	 <div>
-	  <label for="toxic-inpt">
-Toxicty	  
-</label>
-	  <br>
-	 <input type="number" name="toxic-inpt" max="" min="0"/>
+	 <h3>Toxicty</h3>
+	 <input type="number" name="toxic-inpt"/>
 	 </div>
 	 <div>
-	  <label for="acid-inpt">
-Acidity  
-</label>
-	  <br>
-	  <input type="number" name="acid-inpt" max="" min="0"/>
+<h3>Acidity</h3>
+	  <input type="number" name="acid-inpt"/>
 	 </div> 
 	  <div>
-	  <label for="hygro-inpt">
-Hygroscopity 
-</label>
-	  <br>
-	  <input type="number" name="hygro-inpt" max="" min="0"/>
+	  <h3>Hygroscopity</h3>
+	  <input type="number" name="hygro-inpt"/>
 	 </div>
 	  <div>
-	  <label for="strength-inpt">
-Strength
-</label>
-	  <br>
-	  <input type="number" name="strength-inpt" max="" min="0"/>
+	<h3>Elasticity</h3>
+	  <input type="number" name="elast-inpt"/>
 	 </div>
 	  <div>
-	  <label for="elast-inpt">
-	Elasticity
-</label>
-	  <br>
-	  <input type="number" name="elast-inpt" max="" min="0"/>
-	 </div>
-	  <div>
-	  <label for="britt-inpt">
-Brittleness
-</label>
-	  <br>
-	  <input type="number" name="britt-inpt" max="" min="0"/>
+	  <h3>Brittleness</h3>
+	  <input  type="number" name="britt-inpt"/>
 	 </div>
    </div>
    <button>+</button>
  </div>
- <div class="mkr-div" id="new-mol-list">
-   <div class="new-mol">
+ </div>
+ <div id="mol-info" class="mol-mkr-div">
+ <div>
+ <h1>Close Molecule Table</h1>
+  <div class="mol-srch">
+ <input placeholder="molecule" id="mol-srch-mol" />
+ <button>Search</button>
+ </div>
+ <div class="mkr-div" id="new-mol-table"> 
+   <div id="mol-table">
+  
      <table>
-	   <tr>
+        <tbody>
+	   	 <td>FP</td>
 	     <td>MP</td>
 		 <td>BP</td>
 		 <td>density</td>
@@ -167,37 +314,103 @@ Brittleness
 		 <td>crystal shape</td>
 		 <td>color</td>
 		 <td>Volume</td>
-		 <td>Conductivity</td>
-		 <td>Malleability</td>
-		 <td>Flammability</td>
-		 <td>Toxicity</td>
-		 <td>Acidity</td>
-		 <td>Hygroscopity</td>
-		 <td>Strength</td>
-		 <td>Elasticity</td>
-		 <td>Brittleness</td>
-	   </tr>
-	   <tr>
-	     <td>MP</td>
-		 <td>BP</td>
-		 <td>density</td>
-		 <td>viscosity</td>
-		 <td>solubility</td>
-		 <td>crystal shape</td>
+		 <td>Conduct</td>
+		 <td>Malleable</td>
+		 <td>Flammable</td>
+		 <td>Toxic</td>
+		 <td>Acid</td>
+		 <td>Hygroscope</td>
+		 <td>Elastic</td>
+		 <td>HeatCap</td>
+		 </tbody>
+		 <tr class="info-row" >
+	   	   <td>F</td>
+	     <td>F</td>
+		 <td>F</td>
+		 <td>g/cm³</td><!--------(g/cm³,g/ml,g/L)-------->
+		 <td>Pl</td>
+		 <td>g/L</td>
+		 <td>lattice</td>
 		 <td>color</td>
-		 <td>Volume</td>
-		 <td>Conductivity</td>
-		 <td>Malleability</td>
-		 <td>Flammability</td>
-		 <td>Toxicity</td>
-		 <td>Acidity</td>
-		 <td>Hygroscopity</td>
-		 <td>Strength</td>
-		 <td>Elasticity</td>
-		 <td>Brittleness</td>
+		 <td>cm^3</td>
+		 <td>mS/m</td>
+		 <td>Pa</td>
+		 <td>vol%</td>
+		 <td>TU</td>
+		 <td>pH</td>
+		 <td>0hw</td>
+	 <td>J/(mol·K)</td>
 	   </tr>
+	   <tr class="info-row" >
+	   	   <td>F</td>
+	     <td>F</td>
+		 <td>F</td>
+		 <td>g/cm³</td><!--------(g/cm³,g/ml,g/L)-------->
+		 <td>Pl</td>
+		 <td>g/L</td>
+		 <td>lattice</td>
+		 <td>color</td>
+		 <td>cm^3</td>
+		 <td>mS/m</td>
+		 <td>Pa</td>
+		 <td>vol%</td>
+		 <td>TU</td>
+		 <td>pH</td>
+		 <td>0hw</td>
+		 <td>pascal</td>
+		 <td>J/(mol·K)</td>
+	   </tr>
+
 	 </table>
    </div>
+ </div>
+ </div>
+ <div class="mol-mkr-div" id="srch">
+ <h1>Molecule Search</h1>
+ <div class="mol-srch" >
+ <input placeholder="molecule" id="mol-srch-mol" />
+ <button>Search</button>
+ </div>
+ <div class="mkr-div" id="mol-desc">
+ <div class="desc">
+    <div id="mol-img-div" class="mol-div">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/LetterN.svg/640px-LetterN.svg.png" />
+	</div>
+	<div id="mol-des" class="mol-div">
+	  <h2>Molecule</h2>
+	  <div>
+	    <p>
+		"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+		"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+		</p>
+	  </div>
+	</div>
+ </div>
+  
+ </div>
+ </div>
+ </div>
+  <div class="mol-mkr-div" id="mol-list">
+  <h1>Mol List</h1>
+ <div class="mol-srch">
+ <input placeholder="molecule" id="mol-srch-mol" />
+ <button>Search</button>
+ </div>
+ <div id="new-mol-list">
+  <div class="new-mol">
+  <h3>molecule</h3>
+	<p>
+	    <img style="float:left" src="https://a0.anyrgb.com/pngimg/1180/886/education-icon-science-technology-engineering-and-mathematics-shapes-physics-atom-molecule-laboratory-mathematics-chemistry-research.png"/>
+
+	orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+	but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+	but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</p>
+  </div>
+  
+ 
+ </div>
  </div>
 </body>
 <script src="./Chemaker.js" type="text/javascript" defer async></script>
